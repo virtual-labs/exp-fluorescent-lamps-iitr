@@ -90,6 +90,8 @@ var arrChk = 0
 var index = -1;
 var obs = 1;
 
+var flags1 =  0;
+var flags2 = 0;
 var flags3 = 0;
 var flags4 = 0;
 var flags5 = 0;
@@ -109,7 +111,7 @@ var mouseDown = false;
 
 var var_voltage = 0
 var angle = 0
-var angle_inc = 3.6
+var angle_inc =2.7
 var volt_inc = 2.3
 
 function task(i, x, y) {
@@ -381,6 +383,7 @@ function hideTLLabel() {
 }
 
 up.onclick = function GoUp() {
+
     check.disabled = false
     flags4 = 1;
     switch (index) {
@@ -426,8 +429,10 @@ up.onclick = function GoUp() {
 }
 
 reset.onclick = function restConn() {
+
     window.location.reload();
 }
+
 
 check.onclick = function chkConn() {
 
@@ -477,6 +482,16 @@ check.onclick = function chkConn() {
         }
     }*/
 
+    function Toggle() {
+
+        if(mcb_state == 1) {
+    
+            document.getElementById('MCB').src = 'images/MCB_OFF.png'
+        }
+    
+    }
+
+
     let conn_nodes = [n_a, m_w, c_w]
     let indexes = [1, 2, 4]
 
@@ -513,7 +528,7 @@ check.onclick = function chkConn() {
         window.alert("Invalid Connections!")
         console.log(arrChk)
         console.log(ThreeNode)
-        //window.location.reload();
+        window.location.reload();
     }
 }
 
@@ -573,28 +588,28 @@ function updateVals() {
             d3 = var_voltage * 0.1175 / 230
             d4 = var_voltage *  24 / 230
 
-            P_A.style.transform = "rotate(" + Math.abs(d3 * (180 / 500)) + "deg)"
+            P_A.style.transform = "rotate(" + Math.abs(d3 * (360 / 2)) + "deg)"
             P_W.style.transform = "rotate(" + Math.abs(d4 * (90 / 100)) + "deg)"
         }
         if (index == 1) {
             d3 = var_voltage * 0.27 / 230
             d4 = var_voltage * 59.8/ 230
 
-            P_A.style.transform = "rotate(" + Math.abs(d3 * (180 / 500)) + "deg)"
+            P_A.style.transform = "rotate(" + Math.abs(d3 * (360/ 2)) + "deg)"
             P_W.style.transform = "rotate(" + Math.abs(d4 * (90 / 100)) + "deg)"
         }
         if (index == 2) {
             d3 = var_voltage * 0.045 / 230
             d4 = var_voltage * 8 / 230
 
-            P_A.style.transform = "rotate(" + Math.abs(d3 * (180 / 500)) + "deg)"
+            P_A.style.transform = "rotate(" + Math.abs(d3 * (360/ 2)) + "deg)"
             P_W.style.transform = "rotate(" + Math.abs(d4 * (90 / 100)) + "deg)"
         }
         if (index == 3) {
             d3 = var_voltage * 0.325 / 230
             d4 = var_voltage * 52.8 / 230
 
-            P_A.style.transform = "rotate(" + Math.abs(d3 * (180 / 500)) + "deg)"
+            P_A.style.transform = "rotate(" + Math.abs(d3 * (360 / 2)) + "deg)"
             P_W.style.transform = "rotate(" + Math.abs(d4 * (90 / 100)) + "deg)"
         }
     }
@@ -627,6 +642,9 @@ var_switch.onclick = function toggle_var() {
     }
 }
 
+
+
+
 mcb_switch.onclick = function toggle_mcb() {
 
 
@@ -641,7 +659,9 @@ mcb_switch.onclick = function toggle_mcb() {
             updateVals();
         }
     }
+
     else if (mcb_state == 1) {
+
         document.getElementById('MCB').src = 'images/MCB_Off.png' // IF IN ON STATE PLACE IMAGE OF OFF STATE
         document.getElementById('Var').src = 'images/Variac_OFF.png'
         var_voltage = 0
@@ -654,6 +674,7 @@ mcb_switch.onclick = function toggle_mcb() {
         setZero();
     }
 }
+
 
 onOff_switch.onclick = function toggle_switch() {
 
@@ -692,7 +713,6 @@ add.onclick = function AddToTable() {
         let Pf = row.insertCell(4);
 
         SNo.innerHTML = obs;
-
         volt.innerHTML = (var_voltage).toFixed(3);
         amps.innerHTML = (d3).toFixed(3);
         watts.innerHTML = (d4).toFixed(3);
@@ -775,13 +795,13 @@ function verify_inputs(){
     if((equalto.value == pf.value&&(equalto.value != ""))){
         window.alert("The observations are verified!")
     }
-    else{
+    else {
         window.alert("The power factor of the load is not correct.")
     }
 
 }
 
-  /* function highlight() {
+   function highlight() {
 
     let conn = instance.getConnections();
 
@@ -790,10 +810,18 @@ function verify_inputs(){
         instance.deleteEveryConnection()
     }
 
-    if (flags4 == 1) {
+
+    /*   if (flags4 == 1) {
         s1.style.color = "black";
         s2.style.color = "red";
 
+    }
+
+    if(flags2 == 1)  {
+
+        s1.style.color = "black";
+        s1.style.color = "black";
+        s2.style.color = "red";
     }
 
     if (conn.length == 1) {
@@ -803,6 +831,7 @@ function verify_inputs(){
     }
 
     if (flags3 == 1) {
+
         s1.style.color = "black";
         s2.style.color = "black";
         s3.style.color = "black";
@@ -810,6 +839,7 @@ function verify_inputs(){
     }
 
     if (flags5 == 1) {
+
         s1.style.color = "black";
         s2.style.color = "black";
         s3.style.color = "black";
@@ -818,6 +848,7 @@ function verify_inputs(){
     }
 
     if (flags6 == 1) {
+
         s1.style.color = "black";
         s2.style.color = "black";
         s3.style.color = "black";
@@ -827,17 +858,18 @@ function verify_inputs(){
     }
 
     if (flags7 == 1) {
+
         s1.style.color = "black";
         s2.style.color = "black";
         s3.style.color = "black";
         s4.style.color = "black";
         s5.style.color = "black";
         s6.style.color = "black";
-        s7.style.color = "red";
+        s7.style.color = "red";     */
 
         prnt.disabled = false;
+        
     }
-
-}     */
  
-//window.setInterval(highlight, 100);
+window.setInterval(highlight, 100);
+

@@ -1,1 +1,1 @@
-## To study and measurement of power factor of an electrical load.
+## To Study and Measurement of Power factor of Electrical Load.

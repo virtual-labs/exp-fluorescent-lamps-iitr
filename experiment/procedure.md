@@ -1,4 +1,4 @@
-### Steps to perform experiment
+### Steps to perform experiment:
 <br>
   ** STEP 1: Select a load by clicking on the ‘LOAD’ button.<br>
 ** STEP 2: Make connections as per the instructions given below:<br>
@@ -16,7 +16,7 @@
 (l)	7 to 14<br>
 ** Note: Click on the label to delete the connection for the corresponding node.<br>
 ** STEP 3: Then check the connections by clicking on the ‘CHECK’ button.<br>
-** STEP 4:  If the alert is ‘Invalid connections’ then click on ‘RESET’ button and make connection again.<br>
+** STEP 4:  If the alert is ‘Invalid connections’ the experiment will reload automatically and repeat from step 1.<br>
 ** STEP 5: If the alert is ‘Right connections’ follow the below steps.<br>
 ** STEP 6: Turn ON the MCB.<br>
 ** STEP 7: Then, switch on the variac by clicking on the button.<br>
