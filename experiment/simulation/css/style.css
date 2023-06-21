@@ -11,8 +11,8 @@ body{
 
     background-color: #606471;
     width: 1500px;
-    /* height: 1300px; */
-    height:auto;
+     height: 1500px; 
+    /* height:auto; */
     overflow: hidden;
     margin: 0 auto;
     border-radius: 10px;
@@ -23,8 +23,7 @@ body{
     margin: 0 30px;
     margin-top: 20px;
     margin-bottom: 5px;
-
-    background-color: #eaeaea;
+    background-color: #1e1e1e ;
     border-radius: 10px;
 
 }
@@ -91,7 +90,6 @@ body{
 }
 .r2c1 .o_table{
     float:left;
-
     width: 500px;
     height: 250px;
     background-color: #eaeaea;
@@ -159,43 +157,59 @@ body{
 
 
 /*Buttons CSS*/
-.action-buttons {
+.control-panel {
     border: none;
 
 }
 
-.control-panel-buttons {
+.control-panel {
     display: block;
-
-    height: 40px;
+    margin: 0 auto;
+    height: 100px;
     width: 500px;
     background-color: #eaeaea;
+    /* margin: 10px 50px 0px; */
+    border-radius: 10px;
+    text-align: center;
+}
 
+.control-panel p{
+    text-align: center;
+    font-family: 'Zacbel X', sans-serif;
+    font-size: 20px;
+    color: black
+}
+
+.control-panel-buttons {
+    /* position: absolute; */
+    display: block;
+    height: 40px;
+    width: 500px;
+    /* background-color: #eaeaea; */
+    margin: -100px 0px ;
     border-radius: 10px;
     text-align: center;
 }
 
 .control-panel-buttons button {
-    border: none;
+    border:block;
     height: 35px;
     outline: none;
     background-color: rgba(129, 129, 129, 0.313);
-
-    margin: 0px 10px;
+    margin: 97px 12px;
+    /* margin-left: -120px; */
     border-radius: 10px;
-
-
     text-align: center;
     font-family: 'Foco Trial', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     transition: all 0.25s ease-in, border 0.001s ease-in-out;
     cursor: pointer;
+    
 }
 
 .control-panel-buttons button:hover {
     background-color: #1e1e1ee8;
     color: rgb(238, 234, 234);
-
 }
 
 .control-panel-buttons button:active {
@@ -205,15 +219,9 @@ body{
 }
 /*Table Css*/
 .o_table {
-
-
-
     border-radius: 10px;
     width: 500px;
     height: 380px;
-
-
-
 }
 
 .o_table table {
@@ -725,8 +733,10 @@ opacity:0;
     text-align: center;
     font-size: 20px;
     border-radius: 0px 10px 10px 0px;
+
     height: 120px;
     width: 50px;
+
     position: absolute;
     top: 10px;
     left: 300px;
@@ -764,16 +774,16 @@ user-select: none;
     right:630px;
 }
 #AmmeterC{
-    bottom:240px;
-    right:740px;
+    bottom:238px;
+    right:732px;
 }
 #VoltmeterC{
-    bottom:215px;
-    right:812px;
+    bottom:212px;
+    right:802px;
 }
 #WattmeterC{
     bottom:185px;
-    right:882px;
+    right:870px;
 }
 #numerator{
     bottom:95px;
@@ -792,7 +802,7 @@ user-select: none;
 }
 #equalto{
     bottom:80px;
-    right:1010px;
+    right:1000px;
 
 }
 #DeviceC2{
@@ -806,12 +816,7 @@ user-select: none;
     left:235px;
 
 }
-
-
 /*Variac Slider*/
-
-
-
 
 #Var_Knob {
     /* pointer-events: none; */
@@ -905,3 +910,4 @@ border-radius: 2px;
 }
 
 
+    /* This is the ending of the css part.  */
