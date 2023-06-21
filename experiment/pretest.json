@@ -1,39 +1,11 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"Power factor can be improved by connecting which among these -","answers":{"a":"Static capacitor","b":"Resistors","c":"Synchronous Condensers","d":"A & C both"},"correctAnswer":"d"},
+{"question":"To reduce the power consumption, the capacitors should be located -","answers":{"a":"As close as possible too load","b":"As far as to the load","c":"Not too close not too far from the load","d":"All of these"},"correctAnswer":"a"},
+{"question":"If power factor is less than unity it will result in -","answers":{"a":"Large kVA rating of equipment","b":"Greater conductor size","c":"Large copper losses","d":"All of these"},"correctAnswer":"d"},
+{"question":"If load current decrease then power factor -","answers":{"a":"Will also decrease","b":"Will increase","c":"Will remain unchanged","d":"None of these"},"correctAnswer":"b"},
+{"question":"A pure inductive load draws -","answers":{"a":"Leading reactive power","b":" Active power","c":"Lagging reactive power","d":" None of the above"},"correctAnswer":"c"},
+{"question":"Active power is equal to -","answers":{"a":"VIcosΦ","b":"VIsinΦ","c":"VI","d":"Any of these above"},"correctAnswer":"a"},
+{"question":"Wattless component is -","answers":{"a":"I","b":"IsinΦ","c":"IcosΦ","d":"None of these"},"correctAnswer":"b"},
+{"question":"In order to improve the power factor of equipment operating at lagging power factor, a capacitor is connected -","answers":{"a":"In series with the equipment","b":"In parallel with the load","c":"In series-parallel with the load","d":"Either A & B"},"correctAnswer":"b"},
+{"question":"What is the advantage of the static capacitors-","answers":{"a":"Low losses","b":"Easy installation","c":"Lower maintenance","d":"All of the above"},"correctAnswer":"d"},
+{"question":"Which of the following is present inside the fluorescent tube -","answers":{"a":"Helium and oxygen","b":"Argon and carbon dioxide","c":"Argon and neon","d":"Mercury vapour"},"correctAnswer":"d"}]
+
