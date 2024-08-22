@@ -212,7 +212,7 @@ function buildNodes(state_value) {
             connectionType: "negative",
             paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
             connectionsDetachable: state_value,
-            maxConnections: 1,
+            maxConnections: 2,
             connector: ["StateMachine", { curviness: -50 }]
 
         })
@@ -240,7 +240,7 @@ function buildNodes(state_value) {
             connectionType: "grey",
             paintStyle: { fill: "#525252", strokeWidth: 2.5 },
             connectionsDetachable: state_value,
-            maxConnections: 1,
+            maxConnections: 2,
             connector: ["StateMachine", { curviness: -20 }]
 
         })
