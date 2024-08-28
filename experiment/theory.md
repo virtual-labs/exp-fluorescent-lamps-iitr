@@ -7,7 +7,7 @@ Power factor is an important parameter of a system and improving power factor is
 
 <!-- <br> ![Figure 1: Circuit Diagram for measurement of power factor ](images/pic1.png) </center>  <br> -->
 
-<center><img src="images/pic1.png"></center> <center>Fig.1: Circuit Diagram for measurement of power factor</center> <br>
+<center><img src="images/pic1.png" width="40%"></center> <center><b>Fig.1: Circuit Diagram for measurement of power factor</b></center> <br>
 
 Fluorescent lamps form and inductive load on the AC mains supply. As a result large installations of such lamps suffer a poor power factor and resultant voltage drop. Adding a capacitor in parallel to each lamp corrects the power factor bringing it back to close to unity.In AC circuits, there are two kind of electric power supplying the load: one is active power P, the other Q is reactive power Q. <br>
 
@@ -16,17 +16,10 @@ Real power (P) also known as true or active power, performs the “real work” 
 As resistances do not produce any phasor difference (phase shift) between voltage and current waveforms, all the useful power is delivered directly to the resistance and converted to heat, light and work. Then the power consumed by a resistance is real power which is fundamentally the circuits average power.<br>
 
 Calculating the average power of AC should take the phase difference of voltage and current i.e. Ф <br>
-<center>
 
-$P= VIcosФ $ 
+ <center> $P= VIcosФ $ </center> 
 
-</center>
-
-<center>
-
-$cosФ =\frac {P}{V⋅I}.........(1)$ 
-   
-</center>           
+ <center> $cosФ =\frac {P}{V⋅I}.........(1) $ </center>               
 
 The cosФ mentioned the formula is the power factor of the circuit. The phase difference of voltage and current or the power factor of the circuit is dependent on the circuit (load) parameters. <br>
 
@@ -34,25 +27,16 @@ Reactive power (Q) also known as wattless power is the power consumed in an AC c
 
 To find reactive power, the rms voltage and current values are multiplied by the sine of the phase angle, Φ as shown below:
 
-<center>
-
-$Q = VIsinФ VAr....... (2)$
-
-</center>
+<center> $Q = VIsinФ VAr....... (2)  $ </center> 
 
 The product of the rms voltage V applied to an AC circuit and the rms current I flowing into that circuit is called the “volt-ampere product” (VA) given the symbol S and whose magnitude is known generally as apparent power. Apparent power,  <br>
-<center>
 
-$S=V ⋅ I = \sqrt{(P^2 + Q^2)}.......(3)$
+<center> $S=V ⋅ I = \sqrt{(P^2 + Q^2)}.......(3)$ </center>
 
-</center>
-In electrostatics, power factor could also indicate the utilization rate of the alternating current (AC). Power factor defined as the ratio of active power P and apparent power S, <br><br>
+In electrostatics, power factor could also indicate the utilization rate of the alternating current (AC). Power factor defined as the ratio of active power P and apparent power S, <br>
 
-<center>
+ <center> $cosФ = \frac{P}{S}  ..........(4) $ </center>
 
-$cosФ = \frac{P}{S}  ..........(4)$ 
-
-</center>
 Fluorescent lamp is inductive load and commonly used methods for improving the power factor is to the perceptual load, the common way to improve power factor is to parallelly connect the inductive load and electrostatic capacitance. <br>
 
 The electric current and the power factor of inductive load would not change after parallelly connecting the capacitor because the applied voltage and load parameter hasn’t been changed while the phase difference Ф of the voltage V and electric current has became declined, that is cosФ rising. Here the factor of improving the power mentioned is the factor of improving the power supply or the power grid, rather than any inductive load power factor. <br> 
