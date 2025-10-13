@@ -1,4 +1,4 @@
-[{"question":"Power factor can be improved by connecting which among these -","answers":{"a":"Static capacitor","b":"Resistors","c":"Synchronous Condensers","d":"A & C both"},"correctAnswer":"d"},
+[{"question":"Power factor can be improved by connecting which among these -","answers":{"a":"Static capacitor","b":"Resistors","c":"Synchronous Condensers","d":"Both A & C"},"correctAnswer":"d"},
 {"question":"To reduce the power consumption, the capacitors should be located -","answers":{"a":"As close as possible too load","b":"As far as to the load","c":"Not too close not too far from the load","d":"All of these"},"correctAnswer":"a"},
 {"question":"If power factor is less than unity it will result in -","answers":{"a":"Large kVA rating of equipment","b":"Greater conductor size","c":"Large copper losses","d":"All of these"},"correctAnswer":"d"},
 {"question":"If load current decrease then power factor -","answers":{"a":"Will also decrease","b":"Will increase","c":"Will remain unchanged","d":"None of these"},"correctAnswer":"b"},
